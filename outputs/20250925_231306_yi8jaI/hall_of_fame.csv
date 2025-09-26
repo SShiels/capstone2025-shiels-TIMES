@@ -1,0 +1,13 @@
+Complexity,Loss,Equation
+1,264.71396,"45.541924"
+3,169.36932,"Clim_Sens * 14.602149"
+5,99.16084,"Clim_Sens * (17.915636 - Temp_Limit)"
+7,98.99114,"(Clim_Sens + -0.054242276) * (18.134333 - Temp_Limit)"
+8,91.48291,"Clim_Sens * ((35.09608 / exp(Temp_Limit)) + 10.210913)"
+10,86.777374,"(((3.1399145 - log(Temp_Limit)) * Clim_Sens) * Clim_Sens) - -23.292475"
+12,57.09309,"(Delay * ((Clim_Sens * 0.9147481) - (Temp_Limit - log(Pop)))) - -31.563698"
+17,47.319168,"(((sin(Delay - -2.7450542) + 2.2430708) - log(Temp_Limit - 1.3274469)) * (Clim_Sens * Clim_Sens)) - -23.124842"
+23,47.169662,"((((sin(Delay - -2.6699271) + (2.1791108 - log(Temp_Limit - 1.3477138))) * Clim_Sens) * Clim_Sens) - -23.517763) + ((-1.1016653 / Pop) - -0.7162115)"
+25,43.449703,"(SDR - (Clim_Sens * log(exp((cos(GDP) - (((Delay / 0.3325293) / exp(Temp_Limit)) / SDR)) * Clim_Sens) * 0.0010731872))) + (SDR + Temp_Limit)"
+27,43.091286,"(SDR + (Temp_Limit + (SDR * GDP))) - (log(exp(Clim_Sens * (cos(GDP) - (((Delay / 0.3325293) / exp(Temp_Limit)) / SDR))) * 0.0010731872) * Clim_Sens)"
+28,42.339195,"(((SDR + (2.605731 - (log(exp((((0.5815325 - ((Delay / 0.2949415) / exp(Temp_Limit))) * Clim_Sens) / SDR) * 0.6006007)) * Clim_Sens))) + SDR) + Temp_Limit) * 1.8288366"

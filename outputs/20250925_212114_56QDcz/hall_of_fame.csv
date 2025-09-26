@@ -1,0 +1,12 @@
+Complexity,Loss,Equation
+1,264.71396,"45.538544"
+3,169.37708,"Clim_Sens / 0.068612926"
+5,169.35338,"(Clim_Sens * 14.418608) - -0.600004"
+7,168.46257,"exp(1.7659616 + (log(Clim_Sens) + Elast_ESD_Driver))"
+9,141.72685,"exp(((log(Clim_Sens) / Temp_Limit) + CO2_Storage_Poten) - -2.1617882)"
+11,136.95801,"(exp((log(Clim_Sens) * 1.3101313) + 2.0441518) - -14.271733) - Temp_Limit"
+13,100.058784,"Elast_ESD_Driver * (19.025114 - ((Temp_Limit + (Temp_Limit - -11.2584)) - (Clim_Sens * 14.255634)))"
+15,96.43351,"((((Elast_ESD_Driver * ((GDP + 2.3712177) * Clim_Sens)) + 1.3223891) / 0.5427406) - Temp_Limit) / 0.41786107"
+17,95.18293,"(((((Clim_Sens * (Elast_ESD_Driver * (GDP + 1.734318))) + 1.5158818) / 0.6683391) / 0.78167665) - Temp_Limit) / 0.35955706"
+20,93.90551,"(((GDP + Elast_ESD_Driver) / 0.054681957) - (((Temp_Limit + (Temp_Limit - -30.23119)) - (Clim_Sens * 14.49989)) + log(Temp_Limit))) * Elast_ESD_Driver"
+21,93.20307,"(((((Elast_ESD_Driver * (((GDP + (2.5088568 / Clim_Sens)) + 0.98877597) * Clim_Sens)) + -1.1356891) / 0.60307294) / 0.6694599) - Temp_Limit) / 0.35338774"

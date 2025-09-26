@@ -1,0 +1,12 @@
+Complexity,Loss,Equation
+1,260.06964,"55.34796"
+3,65.986084,"Clim_Sens * 17.783203"
+5,35.445595,"(Elast_ESD_Driver * Clim_Sens) * 17.821411"
+6,35.189247,"exp(Elast_ESD_Driver) * (Clim_Sens * 6.5425124)"
+7,24.808582,"((Elast_ESD_Driver * 21.753319) - SDR) * Clim_Sens"
+9,19.719112,"(Clim_Sens * ((Elast_ESD_Driver * 24.848549) - SDR)) + -10.2103195"
+10,19.39684,"(Clim_Sens * ((exp(Elast_ESD_Driver) / 0.11009633) - SDR)) + -9.96699"
+11,17.876757,"(((Elast_ESD_Driver * 25.33885) - SDR) * Clim_Sens) - (12.658194 / GDP)"
+13,16.008884,"((((exp(Elast_ESD_Driver) + log(GDP)) / 0.11049071) - SDR) * Clim_Sens) + -11.46205"
+15,15.307788,"(Clim_Sens * (((Elast_ESD_Driver * 28.758371) - SDR) - ((12.599281 / GDP) - 7.7813334))) - 9.96266"
+18,14.906629,"(Other_ESD_Drivers + (((GDP * ((exp(Elast_ESD_Driver) / 0.107729726) + (-8.9622755 - SDR))) + 7.6582065) * Clim_Sens)) + -11.453665"
