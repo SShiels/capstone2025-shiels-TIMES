@@ -1,0 +1,26 @@
+PARAMETERS: Scenario BASE_SSP2, xvar code small xvars ['SDR', 'Clim_Sens', 'Pop', 'GDP'], target GSupply
+
+
+TRAINING: Magpie Regressor...
+
+MEAN SQUARED ERROR for Magpie Regressor, in Scenario BASE_SSP2, xvar code small xvars ['SDR', 'Clim_Sens', 'Pop', 'GDP'], target GSupply : 7.379476635623
+
+
+
+   size      loss  loss_validation  \
+2    16  0.727515         0.675278   
+1     6  0.729536         0.675674   
+0     2  0.729536         0.675674   
+
+                                            equation  
+2  ((X[3] ** (0.5485 / log(X[0]))) * log(72370701...  
+1                                  (X[3] - -31.7719)  
+0                                               X[3]  
+BEST EQUATION: ((X[3] ** (0.5485 / log(X[0]))) * log(72370701222250.6875))
+Saved plots for Magpie Regressor to: c:\Users\Sophie\OneDrive - National University of Ireland, Galway\Y1S2\Thesis\SHAP + RFR or PySR or NN\capstone2025-shiels-TIMES\shap_outputs_06Oct2025\Magpie Regressor\BASE_SSP2\GSupply\small
+
+
+
+
+TRAINING: PySRRegressor...
+

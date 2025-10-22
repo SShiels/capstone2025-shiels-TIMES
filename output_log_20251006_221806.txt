@@ -1,0 +1,85 @@
+PARAMETERS: Scenario BASE_SSP2, xvar code small xvars ['SDR', 'Clim_Sens', 'Pop', 'GDP'], target GSupply
+
+
+TRAINING: Magpie Regressor...
+
+MEAN SQUARED ERROR for Magpie Regressor, in Scenario BASE_SSP2, xvar code small xvars ['SDR', 'Clim_Sens', 'Pop', 'GDP'], target GSupply : 1096.60440857704
+
+
+
+   size      loss  loss_validation                 equation
+2     8  0.717266         0.718557  (log(X[3]) / log(X[0]))
+1     3  0.717421         0.729724                log(X[3])
+0     2  0.716970         0.730332                     X[3]
+BEST EQUATION: (log(X[3]) / log(X[0]))
+Saved plots for Magpie Regressor to: c:\Users\Sophie\OneDrive - National University of Ireland, Galway\Y1S2\Thesis\SHAP + RFR or PySR or NN\capstone2025-shiels-TIMES\shap_outputs_06Oct2025\Magpie Regressor\BASE_SSP2\GSupply\small
+
+
+
+
+TRAINING: PySRRegressor...
+
+MEAN SQUARED ERROR for PySRRegressor, in Scenario BASE_SSP2, xvar code small xvars ['SDR', 'Clim_Sens', 'Pop', 'GDP'], target GSupply : 7.297111500888373
+
+
+
+BEST EQUATION: sin(GDP)*37.4022
+Saved plots for PySRRegressor to: c:\Users\Sophie\OneDrive - National University of Ireland, Galway\Y1S2\Thesis\SHAP + RFR or PySR or NN\capstone2025-shiels-TIMES\shap_outputs_06Oct2025\PySRRegressor\BASE_SSP2\GSupply\small
+
+
+
+
+TRAINING: RandomForestRegressor...
+
+MEAN SQUARED ERROR for RandomForestRegressor, in Scenario BASE_SSP2, xvar code small xvars ['SDR', 'Clim_Sens', 'Pop', 'GDP'], target GSupply : 7.843222628288714
+
+
+
+BEST EQUATION: RandomForestRegressor (no symbolic equation)
+Saved plots for RandomForestRegressor to: c:\Users\Sophie\OneDrive - National University of Ireland, Galway\Y1S2\Thesis\SHAP + RFR or PySR or NN\capstone2025-shiels-TIMES\shap_outputs_06Oct2025\RandomForestRegressor\BASE_SSP2\GSupply\small
+
+
+
+
+TRAINING: MLPRegressor...
+
+MEAN SQUARED ERROR for MLPRegressor, in Scenario BASE_SSP2, xvar code small xvars ['SDR', 'Clim_Sens', 'Pop', 'GDP'], target GSupply : 7.662584937780492
+
+
+
+BEST EQUATION: MLPRegressor (no symbolic equation)
+Saved plots for MLPRegressor to: c:\Users\Sophie\OneDrive - National University of Ireland, Galway\Y1S2\Thesis\SHAP + RFR or PySR or NN\capstone2025-shiels-TIMES\shap_outputs_06Oct2025\MLPRegressor\BASE_SSP2\GSupply\small
+
+
+
+
+PARAMETERS: Scenario BASE_SSP2, xvar code all xvars ['GDP', 'Pop', 'Other_ESD_Drivers', 'SDR', 'Elast_ESD_Driver', 'Elast_ESD_Price', 'CO2_Storage_Poten', 'Wind_Poten', 'Solar_Poten', 'Biomass_Poten', 'Oil_Gas_Poten', 'Solar_PV_Inv_Cost', 'Wind_Inv_Cost', 'Bioenergy_CCS_Inv_Cost', 'Other_Tech_Cost', 'Forcing', 'Land_Sinks', 'Clim_Sens'], target GSupply
+
+
+TRAINING: Magpie Regressor...
+
+MEAN SQUARED ERROR for Magpie Regressor, in Scenario BASE_SSP2, xvar code all xvars ['GDP', 'Pop', 'Other_ESD_Drivers', 'SDR', 'Elast_ESD_Driver', 'Elast_ESD_Price', 'CO2_Storage_Poten', 'Wind_Poten', 'Solar_Poten', 'Biomass_Poten', 'Oil_Gas_Poten', 'Solar_PV_Inv_Cost', 'Wind_Inv_Cost', 'Bioenergy_CCS_Inv_Cost', 'Other_Tech_Cost', 'Forcing', 'Land_Sinks', 'Clim_Sens'], target GSupply : 0.29151650468100276
+
+
+
+   size      loss  loss_validation  \
+8    30  0.007717         0.009556   
+7    22  0.012918         0.013008   
+6    20  0.014646         0.013845   
+5    19  0.015336         0.015272   
+4    14  0.015702         0.017075   
+
+                                            equation  
+8  ((((X[2] + (5.7186 + X[0])) * 5.7186) - (X[10]...  
+7  (((X[4] + ((7.9248 + X[0]) * 0.4040)) * 0.4040...  
+6  ((X[4] * ((log(X[4]) + X[0]) * 6.1616)) ** log...  
+5  ((X[4] * ((log(X[4]) + X[0]) * 15.8294)) + 15....  
+4                (((X[4] - 0.5020) * 0.5020) * X[0])  
+BEST EQUATION: ((((X[2] + (5.7186 + X[0])) * 5.7186) - (X[10] + (11.4605 / X[0]))) * X[4])
+Saved plots for Magpie Regressor to: c:\Users\Sophie\OneDrive - National University of Ireland, Galway\Y1S2\Thesis\SHAP + RFR or PySR or NN\capstone2025-shiels-TIMES\shap_outputs_06Oct2025\Magpie Regressor\BASE_SSP2\GSupply\all
+
+
+
+
+TRAINING: PySRRegressor...
+

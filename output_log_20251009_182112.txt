@@ -1,0 +1,74 @@
+[2025-10-09 18:21:12]
+ PARAMETERS: Scenario BASE_SSP2, xvar code small xvars ['SDR', 'Clim_Sens', 'Pop', 'GDP'], target GSupply
+
+[2025-10-09 18:21:12]
+ 
+[2025-10-09 18:21:12]
+ TRAINING: Magpie Regressor...
+
+[2025-10-09 18:21:33]
+ 
+============================================================
+[2025-10-09 18:21:33]
+ MODEL QUALITY METRICS: Magpie Regressor
+[2025-10-09 18:21:33]
+ ============================================================
+[2025-10-09 18:21:33]
+ Training Set Performance:
+[2025-10-09 18:21:33]
+   MSE:  1078.875605
+[2025-10-09 18:21:33]
+   RMSE: 32.846242
+[2025-10-09 18:21:33]
+   MAE:  32.739724
+[2025-10-09 18:21:33]
+   R²:   -151.102948
+[2025-10-09 18:21:33]
+ 
+Test Set Performance:
+[2025-10-09 18:21:33]
+   MSE:  1093.270373
+[2025-10-09 18:21:33]
+   RMSE: 33.064639
+[2025-10-09 18:21:33]
+   MAE:  32.933983
+[2025-10-09 18:21:33]
+   R²:   -122.896337
+[2025-10-09 18:21:33]
+ 
+Overfitting Check:
+[2025-10-09 18:21:33]
+   Train-Test MSE Ratio: 0.9868
+[2025-10-09 18:21:33]
+   Train-Test R² Diff:   -28.2066
+[2025-10-09 18:21:33]
+ 
+============================================================
+[2025-10-09 18:21:33]
+ TOP 5 EQUATIONS (Magpie Regressor):
+[2025-10-09 18:21:33]
+ ============================================================
+[2025-10-09 18:21:33]
+    size      loss  loss_validation                               equation
+3    13  0.716685         0.728227  (log(X[3]) * log((log(X[1]) + X[1])))
+2    12  0.713183         0.736198   (log(X[3]) * (400.9216 / log(X[0])))
+1     3  0.714722         0.739432                              log(X[3])
+0     2  0.713803         0.741731                                   X[3]
+[2025-10-09 18:21:33]
+ 
+Best equation: (log(X[3]) * log((log(X[1]) + X[1])))
+[2025-10-09 18:21:33]
+ 
+============================================================
+
+[2025-10-09 18:21:33]
+ BEST EQUATION: (log(X[3]) * log((log(X[1]) + X[1])))
+[2025-10-09 18:21:42]
+ Saved plots for Magpie Regressor to: c:\Users\Sophie\OneDrive - National University of Ireland, Galway\Y1S2\Thesis\SHAP + RFR or PySR or NN\capstone2025-shiels-TIMES\shap_outputs_09Oct2025\Magpie Regressor\BASE_SSP2\GSupply\small
+
+
+
+
+[2025-10-09 18:21:42]
+ TRAINING: PySRRegressor...
+

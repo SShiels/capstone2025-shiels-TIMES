@@ -1,0 +1,1094 @@
+[2025-10-07 21:26:39] PARAMETERS: Scenario BASE_SSP2, xvar code small xvars ['SDR', 'Clim_Sens', 'Pop', 'GDP'], target GSupply
+
+[2025-10-07 21:26:39] 
+[2025-10-07 21:26:39] TRAINING: Magpie Regressor...
+
+[2025-10-07 21:27:05] 
+============================================================
+[2025-10-07 21:27:05] MODEL QUALITY METRICS: Magpie Regressor
+[2025-10-07 21:27:05] ============================================================
+[2025-10-07 21:27:05] Training Set Performance:
+[2025-10-07 21:27:05]   MSE:  7.452842
+[2025-10-07 21:27:05]   RMSE: 2.729989
+[2025-10-07 21:27:05]   MAE:  2.164214
+[2025-10-07 21:27:05]   R²:   -0.050723
+[2025-10-07 21:27:05] 
+Test Set Performance:
+[2025-10-07 21:27:05]   MSE:  7.668558
+[2025-10-07 21:27:05]   RMSE: 2.769216
+[2025-10-07 21:27:05]   MAE:  2.194629
+[2025-10-07 21:27:05]   R²:   0.130950
+[2025-10-07 21:27:05] 
+Overfitting Check:
+[2025-10-07 21:27:05]   Train-Test MSE Ratio: 0.9719
+[2025-10-07 21:27:05]   Train-Test R² Diff:   -0.1817
+[2025-10-07 21:27:21] 
+============================================================
+[2025-10-07 21:27:21] TOP 5 EQUATIONS (Magpie Regressor):
+[2025-10-07 21:27:21] ============================================================
+[2025-10-07 21:27:21]    size      loss  loss_validation  \
+1    22  0.728667         0.667003   
+0     2  0.730183         0.668541   
+
+                                            equation  
+1  (X[3] * (log((log(X[1]) / log((X[0] + log(1.09...  
+0                                               X[3]  
+[2025-10-07 21:27:21] 
+Best equation: (X[3] * (log((log(X[1]) / log((X[0] + log(1.0989))))) + 30.6446))
+[2025-10-07 21:27:21] 
+============================================================
+
+[2025-10-07 21:27:21] BEST EQUATION: (X[3] * (log((log(X[1]) / log((X[0] + log(1.0989))))) + 30.6446))
+[2025-10-07 21:27:32] Saved plots for Magpie Regressor to: c:\Users\Sophie\OneDrive - National University of Ireland, Galway\Y1S2\Thesis\SHAP + RFR or PySR or NN\capstone2025-shiels-TIMES\shap_outputs_07Oct2025\Magpie Regressor\BASE_SSP2\GSupply\small
+
+
+
+
+[2025-10-07 21:27:32] TRAINING: PySRRegressor...
+
+[2025-10-08 01:39:37] 
+============================================================
+[2025-10-08 01:39:37] MODEL QUALITY METRICS: PySRRegressor
+[2025-10-08 01:39:37] ============================================================
+[2025-10-08 01:39:37] Training Set Performance:
+[2025-10-08 01:39:37]   MSE:  6.600030
+[2025-10-08 01:39:37]   RMSE: 2.569052
+[2025-10-08 01:39:37]   MAE:  2.022747
+[2025-10-08 01:39:37]   R²:   0.069509
+[2025-10-08 01:39:37] 
+Test Set Performance:
+[2025-10-08 01:39:37]   MSE:  7.297112
+[2025-10-08 01:39:37]   RMSE: 2.701317
+[2025-10-08 01:39:37]   MAE:  2.149323
+[2025-10-08 01:39:37]   R²:   0.173045
+[2025-10-08 01:39:37] 
+Overfitting Check:
+[2025-10-08 01:39:37]   Train-Test MSE Ratio: 0.9045
+[2025-10-08 01:39:37]   Train-Test R² Diff:   -0.1035
+[2025-10-08 01:39:40] 
+============================================================
+[2025-10-08 01:39:40] TOP 5 EQUATIONS (PySRRegressor):
+[2025-10-08 01:39:40] ============================================================
+[2025-10-08 01:39:40]     complexity      loss     score  \
+19          30  5.935492  0.000841   
+18          28  5.945483  0.001162   
+17          26  5.959312  0.003832   
+16          24  6.005163  0.004200   
+15          22  6.055819  0.003440   
+
+                                             equation  
+19  (((2.238418 / Clim_Sens) - GDP) - sin(sin(exp(...  
+18  (((GDP * 31.954094) + -31.954943) / log(GDP)) ...  
+17  ((((GDP * 31.843752) + -31.844553) / log(GDP))...  
+16  (((GDP * 31.843752) + -31.844553) / log(GDP)) ...  
+15  ((sin(GDP) * 29.411703) - -6.9635305) - sin(si...  
+[2025-10-08 01:39:40] 
+Best equation: sin(GDP)*37.4022
+[2025-10-08 01:39:40] 
+============================================================
+
+[2025-10-08 01:39:40] BEST EQUATION: sin(GDP)*37.4022
+[2025-10-08 01:39:46] Saved plots for PySRRegressor to: c:\Users\Sophie\OneDrive - National University of Ireland, Galway\Y1S2\Thesis\SHAP + RFR or PySR or NN\capstone2025-shiels-TIMES\shap_outputs_07Oct2025\PySRRegressor\BASE_SSP2\GSupply\small
+
+
+
+
+[2025-10-08 01:39:46] TRAINING: RandomForestRegressor...
+
+[2025-10-08 01:40:37] 
+============================================================
+[2025-10-08 01:40:37] MODEL QUALITY METRICS: RandomForestRegressor
+[2025-10-08 01:40:37] ============================================================
+[2025-10-08 01:40:37] Training Set Performance:
+[2025-10-08 01:40:37]   MSE:  0.981154
+[2025-10-08 01:40:37]   RMSE: 0.990532
+[2025-10-08 01:40:37]   MAE:  0.783305
+[2025-10-08 01:40:37]   R²:   0.861674
+[2025-10-08 01:40:37] 
+Test Set Performance:
+[2025-10-08 01:40:37]   MSE:  7.843223
+[2025-10-08 01:40:37]   RMSE: 2.800575
+[2025-10-08 01:40:37]   MAE:  2.230768
+[2025-10-08 01:40:37]   R²:   0.111156
+[2025-10-08 01:40:37] 
+Overfitting Check:
+[2025-10-08 01:40:37]   Train-Test MSE Ratio: 0.1251
+[2025-10-08 01:40:37]   Train-Test R² Diff:   0.7505
+[2025-10-08 01:50:24] 
+============================================================
+[2025-10-08 01:50:24] FEATURE IMPORTANCES (RandomForestRegressor):
+[2025-10-08 01:50:24] ============================================================
+[2025-10-08 01:50:24] Top 5 Most Important Features:
+[2025-10-08 01:50:24]   1. GDP: 0.346412
+[2025-10-08 01:50:24]   2. SDR: 0.252059
+[2025-10-08 01:50:24]   3. Pop: 0.234278
+[2025-10-08 01:50:24]   4. Clim_Sens: 0.167251
+[2025-10-08 01:50:24] 
+Model Parameters:
+[2025-10-08 01:50:24]   Number of trees: 10000
+[2025-10-08 01:50:24]   Max depth: None
+[2025-10-08 01:50:24]   Number of features used: 4
+[2025-10-08 01:50:24] 
+============================================================
+
+[2025-10-08 01:50:24] BEST EQUATION: RandomForestRegressor (no symbolic equation)
+[2025-10-08 01:50:30] Saved plots for RandomForestRegressor to: c:\Users\Sophie\OneDrive - National University of Ireland, Galway\Y1S2\Thesis\SHAP + RFR or PySR or NN\capstone2025-shiels-TIMES\shap_outputs_07Oct2025\RandomForestRegressor\BASE_SSP2\GSupply\small
+
+
+
+
+[2025-10-08 01:50:30] TRAINING: MLPRegressor...
+
+[2025-10-08 01:50:31] 
+============================================================
+[2025-10-08 01:50:31] MODEL QUALITY METRICS: MLPRegressor
+[2025-10-08 01:50:31] ============================================================
+[2025-10-08 01:50:31] Training Set Performance:
+[2025-10-08 01:50:31]   MSE:  6.603583
+[2025-10-08 01:50:31]   RMSE: 2.569744
+[2025-10-08 01:50:31]   MAE:  2.016039
+[2025-10-08 01:50:31]   R²:   0.069008
+[2025-10-08 01:50:31] 
+Test Set Performance:
+[2025-10-08 01:50:31]   MSE:  7.662585
+[2025-10-08 01:50:31]   RMSE: 2.768137
+[2025-10-08 01:50:31]   MAE:  2.211461
+[2025-10-08 01:50:31]   R²:   0.131627
+[2025-10-08 01:50:31] 
+Overfitting Check:
+[2025-10-08 01:50:31]   Train-Test MSE Ratio: 0.8618
+[2025-10-08 01:50:31]   Train-Test R² Diff:   -0.0626
+[2025-10-08 01:50:32] 
+============================================================
+[2025-10-08 01:50:32] NEURAL NETWORK DETAILS (MLPRegressor):
+[2025-10-08 01:50:32] ============================================================
+[2025-10-08 01:50:32] Network Architecture:
+[2025-10-08 01:50:32]   Hidden layers: (100,)
+[2025-10-08 01:50:32]   Number of iterations: 466
+[2025-10-08 01:50:32]   Number of layers: 3
+[2025-10-08 01:50:32]   Output activation: identity
+[2025-10-08 01:50:32] 
+Training Details:
+[2025-10-08 01:50:32]   Final loss: 3.296013
+[2025-10-08 01:50:32]   Solver: adam
+[2025-10-08 01:50:32]   Learning rate: constant
+[2025-10-08 01:50:32]   Training curve (last 5 losses): [np.float64(3.2944280489137165), np.float64(3.2927060508833597), np.float64(3.292484390481433), np.float64(3.2913171136788897), np.float64(3.29601301619631)]
+[2025-10-08 01:50:32] 
+============================================================
+
+[2025-10-08 01:50:32] BEST EQUATION: MLPRegressor (no symbolic equation)
+[2025-10-08 01:50:37] Saved plots for MLPRegressor to: c:\Users\Sophie\OneDrive - National University of Ireland, Galway\Y1S2\Thesis\SHAP + RFR or PySR or NN\capstone2025-shiels-TIMES\shap_outputs_07Oct2025\MLPRegressor\BASE_SSP2\GSupply\small
+
+
+
+
+[2025-10-08 01:50:37] PARAMETERS: Scenario BASE_SSP2, xvar code all xvars ['GDP', 'Pop', 'Other_ESD_Drivers', 'SDR', 'Elast_ESD_Driver', 'Elast_ESD_Price', 'CO2_Storage_Poten', 'Wind_Poten', 'Solar_Poten', 'Biomass_Poten', 'Oil_Gas_Poten', 'Solar_PV_Inv_Cost', 'Wind_Inv_Cost', 'Bioenergy_CCS_Inv_Cost', 'Other_Tech_Cost', 'Forcing', 'Land_Sinks', 'Clim_Sens'], target GSupply
+
+[2025-10-08 01:50:37] 
+[2025-10-08 01:50:37] TRAINING: Magpie Regressor...
+
+[2025-10-08 01:50:59] 
+============================================================
+[2025-10-08 01:50:59] MODEL QUALITY METRICS: Magpie Regressor
+[2025-10-08 01:50:59] ============================================================
+[2025-10-08 01:50:59] Training Set Performance:
+[2025-10-08 01:50:59]   MSE:  0.066504
+[2025-10-08 01:50:59]   RMSE: 0.257883
+[2025-10-08 01:50:59]   MAE:  0.202436
+[2025-10-08 01:50:59]   R²:   0.990624
+[2025-10-08 01:50:59] 
+Test Set Performance:
+[2025-10-08 01:50:59]   MSE:  0.084285
+[2025-10-08 01:50:59]   RMSE: 0.290319
+[2025-10-08 01:50:59]   MAE:  0.225562
+[2025-10-08 01:50:59]   R²:   0.990448
+[2025-10-08 01:50:59] 
+Overfitting Check:
+[2025-10-08 01:50:59]   Train-Test MSE Ratio: 0.7890
+[2025-10-08 01:50:59]   Train-Test R² Diff:   0.0002
+[2025-10-08 01:51:01] 
+============================================================
+[2025-10-08 01:51:01] TOP 5 EQUATIONS (Magpie Regressor):
+[2025-10-08 01:51:01] ============================================================
+[2025-10-08 01:51:01]    size      loss  loss_validation  \
+8    26  0.004509         0.005717   
+7    23  0.010687         0.012532   
+6    22  0.013841         0.016502   
+5    19  0.014590         0.020192   
+4    14  0.043817         0.055956   
+
+                                            equation  
+8  (((4.4952 + (-3.3775 / X[0])) + (4.6044 ** X[4...  
+7  (((35.3705 + (-18.3294 / X[0])) + (14.3605 ** ...  
+6  (((34.6469 + (-18.3377 / X[0])) + (14.1031 ** ...  
+5  ((log(68985.4248) + (-18.3202 / X[0])) + (38.8...  
+4               (((1.7652 + X[4]) ** 3.3602) * X[0])  
+[2025-10-08 01:51:01] 
+Best equation: (((4.4952 + (-3.3775 / X[0])) + (4.6044 ** X[4])) * (X[2] + 4.4952))
+[2025-10-08 01:51:01] 
+============================================================
+
+[2025-10-08 01:51:01] BEST EQUATION: (((4.4952 + (-3.3775 / X[0])) + (4.6044 ** X[4])) * (X[2] + 4.4952))
+[2025-10-08 01:51:22] Saved plots for Magpie Regressor to: c:\Users\Sophie\OneDrive - National University of Ireland, Galway\Y1S2\Thesis\SHAP + RFR or PySR or NN\capstone2025-shiels-TIMES\shap_outputs_07Oct2025\Magpie Regressor\BASE_SSP2\GSupply\all
+
+
+
+
+[2025-10-08 01:51:22] TRAINING: PySRRegressor...
+
+[2025-10-08 05:05:41] 
+============================================================
+[2025-10-08 05:05:41] MODEL QUALITY METRICS: PySRRegressor
+[2025-10-08 05:05:41] ============================================================
+[2025-10-08 05:05:41] Training Set Performance:
+[2025-10-08 05:05:41]   MSE:  0.022197
+[2025-10-08 05:05:41]   RMSE: 0.148988
+[2025-10-08 05:05:41]   MAE:  0.118772
+[2025-10-08 05:05:41]   R²:   0.996871
+[2025-10-08 05:05:41] 
+Test Set Performance:
+[2025-10-08 05:05:41]   MSE:  0.023242
+[2025-10-08 05:05:41]   RMSE: 0.152455
+[2025-10-08 05:05:41]   MAE:  0.123311
+[2025-10-08 05:05:41]   R²:   0.997366
+[2025-10-08 05:05:41] 
+Overfitting Check:
+[2025-10-08 05:05:41]   Train-Test MSE Ratio: 0.9550
+[2025-10-08 05:05:41]   Train-Test R² Diff:   -0.0005
+[2025-10-08 05:06:06] 
+============================================================
+[2025-10-08 05:06:06] TOP 5 EQUATIONS (PySRRegressor):
+[2025-10-08 05:06:06] ============================================================
+[2025-10-08 05:06:06]     complexity      loss     score  \
+24          30  0.020955  0.031661   
+23          29  0.021629  0.012964   
+22          27  0.022197  0.068353   
+21          26  0.023768  0.047547   
+20          25  0.024925  0.019042   
+
+                                             equation  
+24  (exp((Other_ESD_Drivers * 0.3007826) + (GDP + ...  
+23  (exp((((Other_ESD_Drivers * 0.30395237) - (Ela...  
+22  (exp((((Other_ESD_Drivers * 0.30196175) + log(...  
+21  (exp((Other_ESD_Drivers * 0.30072424) + ((GDP ...  
+20  exp(((Other_ESD_Drivers * 0.30149028) + log(El...  
+[2025-10-08 05:06:06] 
+Best equation: Elast_ESD_Driver*exp(1.4000298*Elast_ESD_Driver + GDP + 0.30196175*Other_ESD_Drivers) - (Oil_Gas_Poten - sin(3.92913043157097*Wind_Inv_Cost))*sin(1.4783052*Solar_PV_Inv_Cost) + 18.453146
+[2025-10-08 05:06:06] 
+============================================================
+
+[2025-10-08 05:06:06] BEST EQUATION: Elast_ESD_Driver*exp(1.4000298*Elast_ESD_Driver + GDP + 0.30196175*Other_ESD_Drivers) - (Oil_Gas_Poten - sin(3.92913043157097*Wind_Inv_Cost))*sin(1.4783052*Solar_PV_Inv_Cost) + 18.453146
+[2025-10-08 05:06:26] Saved plots for PySRRegressor to: c:\Users\Sophie\OneDrive - National University of Ireland, Galway\Y1S2\Thesis\SHAP + RFR or PySR or NN\capstone2025-shiels-TIMES\shap_outputs_07Oct2025\PySRRegressor\BASE_SSP2\GSupply\all
+
+
+
+
+[2025-10-08 05:06:26] TRAINING: RandomForestRegressor...
+
+[2025-10-08 05:08:15] 
+============================================================
+[2025-10-08 05:08:15] MODEL QUALITY METRICS: RandomForestRegressor
+[2025-10-08 05:08:15] ============================================================
+[2025-10-08 05:08:15] Training Set Performance:
+[2025-10-08 05:08:15]   MSE:  0.030420
+[2025-10-08 05:08:15]   RMSE: 0.174414
+[2025-10-08 05:08:15]   MAE:  0.128042
+[2025-10-08 05:08:15]   R²:   0.995711
+[2025-10-08 05:08:15] 
+Test Set Performance:
+[2025-10-08 05:08:15]   MSE:  0.384310
+[2025-10-08 05:08:15]   RMSE: 0.619927
+[2025-10-08 05:08:15]   MAE:  0.427710
+[2025-10-08 05:08:15]   R²:   0.956448
+[2025-10-08 05:08:15] 
+Overfitting Check:
+[2025-10-08 05:08:15]   Train-Test MSE Ratio: 0.0792
+[2025-10-08 05:08:15]   Train-Test R² Diff:   0.0393
+[2025-10-08 07:02:41] 
+============================================================
+[2025-10-08 07:02:41] FEATURE IMPORTANCES (RandomForestRegressor):
+[2025-10-08 07:02:41] ============================================================
+[2025-10-08 07:02:41] Top 5 Most Important Features:
+[2025-10-08 07:02:41]   1. Elast_ESD_Driver: 0.877006
+[2025-10-08 07:02:41]   2. GDP: 0.089487
+[2025-10-08 07:02:41]   3. Other_ESD_Drivers: 0.009507
+[2025-10-08 07:02:41]   4. Biomass_Poten: 0.002079
+[2025-10-08 07:02:41]   5. Wind_Poten: 0.001920
+[2025-10-08 07:02:41] 
+Model Parameters:
+[2025-10-08 07:02:41]   Number of trees: 10000
+[2025-10-08 07:02:41]   Max depth: None
+[2025-10-08 07:02:41]   Number of features used: 18
+[2025-10-08 07:02:41] 
+============================================================
+
+[2025-10-08 07:02:41] BEST EQUATION: RandomForestRegressor (no symbolic equation)
+[2025-10-08 07:03:00] Saved plots for RandomForestRegressor to: c:\Users\Sophie\OneDrive - National University of Ireland, Galway\Y1S2\Thesis\SHAP + RFR or PySR or NN\capstone2025-shiels-TIMES\shap_outputs_07Oct2025\RandomForestRegressor\BASE_SSP2\GSupply\all
+
+
+
+
+[2025-10-08 07:03:00] TRAINING: MLPRegressor...
+
+[2025-10-08 07:03:03] 
+============================================================
+[2025-10-08 07:03:03] MODEL QUALITY METRICS: MLPRegressor
+[2025-10-08 07:03:03] ============================================================
+[2025-10-08 07:03:03] Training Set Performance:
+[2025-10-08 07:03:03]   MSE:  0.272699
+[2025-10-08 07:03:03]   RMSE: 0.522206
+[2025-10-08 07:03:03]   MAE:  0.399715
+[2025-10-08 07:03:03]   R²:   0.961554
+[2025-10-08 07:03:03] 
+Test Set Performance:
+[2025-10-08 07:03:03]   MSE:  0.332885
+[2025-10-08 07:03:03]   RMSE: 0.576962
+[2025-10-08 07:03:03]   MAE:  0.461652
+[2025-10-08 07:03:03]   R²:   0.962275
+[2025-10-08 07:03:03] 
+Overfitting Check:
+[2025-10-08 07:03:03]   Train-Test MSE Ratio: 0.8192
+[2025-10-08 07:03:03]   Train-Test R² Diff:   -0.0007
+[2025-10-08 07:03:15] 
+============================================================
+[2025-10-08 07:03:15] NEURAL NETWORK DETAILS (MLPRegressor):
+[2025-10-08 07:03:15] ============================================================
+[2025-10-08 07:03:15] Network Architecture:
+[2025-10-08 07:03:15]   Hidden layers: (100,)
+[2025-10-08 07:03:15]   Number of iterations: 1129
+[2025-10-08 07:03:15]   Number of layers: 3
+[2025-10-08 07:03:15]   Output activation: identity
+[2025-10-08 07:03:15] 
+Training Details:
+[2025-10-08 07:03:15]   Final loss: 0.139355
+[2025-10-08 07:03:15]   Solver: adam
+[2025-10-08 07:03:15]   Learning rate: constant
+[2025-10-08 07:03:15]   Training curve (last 5 losses): [np.float64(0.13854912659786436), np.float64(0.13968797144588005), np.float64(0.1383041176900032), np.float64(0.13527570886956392), np.float64(0.13935471932486937)]
+[2025-10-08 07:03:15] 
+============================================================
+
+[2025-10-08 07:03:15] BEST EQUATION: MLPRegressor (no symbolic equation)
+[2025-10-08 07:03:30] Saved plots for MLPRegressor to: c:\Users\Sophie\OneDrive - National University of Ireland, Galway\Y1S2\Thesis\SHAP + RFR or PySR or NN\capstone2025-shiels-TIMES\shap_outputs_07Oct2025\MLPRegressor\BASE_SSP2\GSupply\all
+
+
+
+
+[2025-10-08 07:03:30] PARAMETERS: Scenario 1p5c_OS_SSP2, xvar code small xvars ['SDR', 'Clim_Sens', 'Pop', 'GDP'], target GSupply
+
+[2025-10-08 07:03:30] 
+[2025-10-08 07:03:30] TRAINING: Magpie Regressor...
+
+[2025-10-08 07:03:54] 
+============================================================
+[2025-10-08 07:03:54] MODEL QUALITY METRICS: Magpie Regressor
+[2025-10-08 07:03:54] ============================================================
+[2025-10-08 07:03:54] Training Set Performance:
+[2025-10-08 07:03:54]   MSE:  50.204018
+[2025-10-08 07:03:54]   RMSE: 7.085479
+[2025-10-08 07:03:54]   MAE:  5.387552
+[2025-10-08 07:03:54]   R²:   0.806959
+[2025-10-08 07:03:54] 
+Test Set Performance:
+[2025-10-08 07:03:54]   MSE:  58.854995
+[2025-10-08 07:03:54]   RMSE: 7.671701
+[2025-10-08 07:03:54]   MAE:  5.340624
+[2025-10-08 07:03:54]   R²:   0.812990
+[2025-10-08 07:03:54] 
+Overfitting Check:
+[2025-10-08 07:03:54]   Train-Test MSE Ratio: 0.8530
+[2025-10-08 07:03:54]   Train-Test R² Diff:   -0.0060
+[2025-10-08 07:03:55] 
+============================================================
+[2025-10-08 07:03:55] TOP 5 EQUATIONS (Magpie Regressor):
+[2025-10-08 07:03:55] ============================================================
+[2025-10-08 07:03:55]    size      loss  loss_validation  \
+9    30  0.100211         0.095825   
+8    27  0.100444         0.096200   
+7    26  0.100444         0.096200   
+6    17  0.108902         0.097520   
+5    14  0.102788         0.098781   
+
+                                            equation  
+9  (X[3] * ((((X[0] + (-7.0706 / -2.4550)) * X[1]...  
+8  (X[3] * ((((X[0] ** -0.2938) ** X[3]) * (-0.55...  
+7  (X[3] * ((((X[0] ** -0.2938) ** X[3]) * (-0.55...  
+6     (X[3] + ((X[1] - log(log(X[0]))) + log(X[3])))  
+5                    (X[1] + ((X[1] / X[0]) + X[3]))  
+[2025-10-08 07:03:55] 
+Best equation: (X[3] * ((((X[0] + (-7.0706 / -2.4550)) * X[1]) + -4.0695) * (11.6653 / X[0])))
+[2025-10-08 07:03:55] 
+============================================================
+
+[2025-10-08 07:03:55] BEST EQUATION: (X[3] * ((((X[0] + (-7.0706 / -2.4550)) * X[1]) + -4.0695) * (11.6653 / X[0])))
+[2025-10-08 07:04:01] Saved plots for Magpie Regressor to: c:\Users\Sophie\OneDrive - National University of Ireland, Galway\Y1S2\Thesis\SHAP + RFR or PySR or NN\capstone2025-shiels-TIMES\shap_outputs_07Oct2025\Magpie Regressor\1p5c_OS_SSP2\GSupply\small
+
+
+
+
+[2025-10-08 07:04:01] TRAINING: PySRRegressor...
+
+[2025-10-08 09:35:27] 
+============================================================
+[2025-10-08 09:35:27] MODEL QUALITY METRICS: PySRRegressor
+[2025-10-08 09:35:27] ============================================================
+[2025-10-08 09:35:27] Training Set Performance:
+[2025-10-08 09:35:27]   MSE:  58.315087
+[2025-10-08 09:35:27]   RMSE: 7.636432
+[2025-10-08 09:35:27]   MAE:  5.751935
+[2025-10-08 09:35:27]   R²:   0.775771
+[2025-10-08 09:35:27] 
+Test Set Performance:
+[2025-10-08 09:35:27]   MSE:  71.750011
+[2025-10-08 09:35:27]   RMSE: 8.470538
+[2025-10-08 09:35:27]   MAE:  6.146972
+[2025-10-08 09:35:27]   R²:   0.772016
+[2025-10-08 09:35:27] 
+Overfitting Check:
+[2025-10-08 09:35:27]   Train-Test MSE Ratio: 0.8128
+[2025-10-08 09:35:27]   Train-Test R² Diff:   0.0038
+[2025-10-08 09:35:29] 
+============================================================
+[2025-10-08 09:35:29] TOP 5 EQUATIONS (PySRRegressor):
+[2025-10-08 09:35:29] ============================================================
+[2025-10-08 09:35:29]     complexity       loss     score  \
+25          29  40.259907  0.017750   
+24          28  40.980915  0.001900   
+23          27  41.058846  0.003807   
+22          26  41.215446  0.009098   
+21          25  41.592125  0.004718   
+
+                                             equation  
+25  ((((Clim_Sens * SDR) * ((GDP - Clim_Sens) * 0....  
+24  (((Clim_Sens * sin(cos(-32.06069 / Clim_Sens) ...  
+23  (((((Clim_Sens + GDP) - 3.5084167) / (SDR / 71...  
+22  (sin(cos(-32.040184 / Clim_Sens) * (exp(Clim_S...  
+21  ((sin(cos(-32.022053 / Clim_Sens) * ((Clim_Sen...  
+[2025-10-08 09:35:29] 
+Best equation: Clim_Sens*(21.7332 - SDR)
+[2025-10-08 09:35:29] 
+============================================================
+
+[2025-10-08 09:35:29] BEST EQUATION: Clim_Sens*(21.7332 - SDR)
+[2025-10-08 09:35:35] Saved plots for PySRRegressor to: c:\Users\Sophie\OneDrive - National University of Ireland, Galway\Y1S2\Thesis\SHAP + RFR or PySR or NN\capstone2025-shiels-TIMES\shap_outputs_07Oct2025\PySRRegressor\1p5c_OS_SSP2\GSupply\small
+
+
+
+
+[2025-10-08 09:35:35] TRAINING: RandomForestRegressor...
+
+[2025-10-08 09:36:20] 
+============================================================
+[2025-10-08 09:36:20] MODEL QUALITY METRICS: RandomForestRegressor
+[2025-10-08 09:36:20] ============================================================
+[2025-10-08 09:36:20] Training Set Performance:
+[2025-10-08 09:36:20]   MSE:  6.671595
+[2025-10-08 09:36:20]   RMSE: 2.582943
+[2025-10-08 09:36:20]   MAE:  1.890635
+[2025-10-08 09:36:20]   R²:   0.974347
+[2025-10-08 09:36:20] 
+Test Set Performance:
+[2025-10-08 09:36:20]   MSE:  50.762631
+[2025-10-08 09:36:20]   RMSE: 7.124790
+[2025-10-08 09:36:20]   MAE:  5.071318
+[2025-10-08 09:36:20]   R²:   0.838703
+[2025-10-08 09:36:20] 
+Overfitting Check:
+[2025-10-08 09:36:20]   Train-Test MSE Ratio: 0.1314
+[2025-10-08 09:36:20]   Train-Test R² Diff:   0.1356
+[2025-10-08 09:45:47] 
+============================================================
+[2025-10-08 09:45:47] FEATURE IMPORTANCES (RandomForestRegressor):
+[2025-10-08 09:45:47] ============================================================
+[2025-10-08 09:45:48] Top 5 Most Important Features:
+[2025-10-08 09:45:48]   1. Clim_Sens: 0.800482
+[2025-10-08 09:45:48]   2. SDR: 0.103003
+[2025-10-08 09:45:48]   3. GDP: 0.057358
+[2025-10-08 09:45:48]   4. Pop: 0.039157
+[2025-10-08 09:45:48] 
+Model Parameters:
+[2025-10-08 09:45:48]   Number of trees: 10000
+[2025-10-08 09:45:48]   Max depth: None
+[2025-10-08 09:45:48]   Number of features used: 4
+[2025-10-08 09:45:48] 
+============================================================
+
+[2025-10-08 09:45:48] BEST EQUATION: RandomForestRegressor (no symbolic equation)
+[2025-10-08 09:45:53] Saved plots for RandomForestRegressor to: c:\Users\Sophie\OneDrive - National University of Ireland, Galway\Y1S2\Thesis\SHAP + RFR or PySR or NN\capstone2025-shiels-TIMES\shap_outputs_07Oct2025\RandomForestRegressor\1p5c_OS_SSP2\GSupply\small
+
+
+
+
+[2025-10-08 09:45:53] TRAINING: MLPRegressor...
+
+[2025-10-08 09:45:54] 
+============================================================
+[2025-10-08 09:45:54] MODEL QUALITY METRICS: MLPRegressor
+[2025-10-08 09:45:54] ============================================================
+[2025-10-08 09:45:54] Training Set Performance:
+[2025-10-08 09:45:54]   MSE:  54.208186
+[2025-10-08 09:45:54]   RMSE: 7.362621
+[2025-10-08 09:45:54]   MAE:  5.545206
+[2025-10-08 09:45:54]   R²:   0.791563
+[2025-10-08 09:45:54] 
+Test Set Performance:
+[2025-10-08 09:45:54]   MSE:  63.307379
+[2025-10-08 09:45:54]   RMSE: 7.956593
+[2025-10-08 09:45:54]   MAE:  5.646289
+[2025-10-08 09:45:54]   R²:   0.798843
+[2025-10-08 09:45:54] 
+Overfitting Check:
+[2025-10-08 09:45:54]   Train-Test MSE Ratio: 0.8563
+[2025-10-08 09:45:54]   Train-Test R² Diff:   -0.0073
+[2025-10-08 09:45:55] 
+============================================================
+[2025-10-08 09:45:55] NEURAL NETWORK DETAILS (MLPRegressor):
+[2025-10-08 09:45:55] ============================================================
+[2025-10-08 09:45:55] Network Architecture:
+[2025-10-08 09:45:55]   Hidden layers: (100,)
+[2025-10-08 09:45:55]   Number of iterations: 544
+[2025-10-08 09:45:55]   Number of layers: 3
+[2025-10-08 09:45:55]   Output activation: identity
+[2025-10-08 09:45:55] 
+Training Details:
+[2025-10-08 09:45:55]   Final loss: 27.122786
+[2025-10-08 09:45:55]   Solver: adam
+[2025-10-08 09:45:55]   Learning rate: constant
+[2025-10-08 09:45:55]   Training curve (last 5 losses): [np.float64(27.14614621905011), np.float64(27.14454161418842), np.float64(27.129866588680777), np.float64(27.126674724778006), np.float64(27.122785907481678)]
+[2025-10-08 09:45:55] 
+============================================================
+
+[2025-10-08 09:45:55] BEST EQUATION: MLPRegressor (no symbolic equation)
+[2025-10-08 09:46:01] Saved plots for MLPRegressor to: c:\Users\Sophie\OneDrive - National University of Ireland, Galway\Y1S2\Thesis\SHAP + RFR or PySR or NN\capstone2025-shiels-TIMES\shap_outputs_07Oct2025\MLPRegressor\1p5c_OS_SSP2\GSupply\small
+
+
+
+
+[2025-10-08 09:46:01] PARAMETERS: Scenario 1p5c_OS_SSP2, xvar code all xvars ['GDP', 'Pop', 'Other_ESD_Drivers', 'SDR', 'Elast_ESD_Driver', 'Elast_ESD_Price', 'CO2_Storage_Poten', 'Wind_Poten', 'Solar_Poten', 'Biomass_Poten', 'Oil_Gas_Poten', 'Solar_PV_Inv_Cost', 'Wind_Inv_Cost', 'Bioenergy_CCS_Inv_Cost', 'Other_Tech_Cost', 'Forcing', 'Land_Sinks', 'Clim_Sens'], target GSupply
+
+[2025-10-08 09:46:01] 
+[2025-10-08 09:46:01] TRAINING: Magpie Regressor...
+
+[2025-10-08 09:46:22] 
+============================================================
+[2025-10-08 09:46:22] MODEL QUALITY METRICS: Magpie Regressor
+[2025-10-08 09:46:22] ============================================================
+[2025-10-08 09:46:22] Training Set Performance:
+[2025-10-08 09:46:22]   MSE:  29.266063
+[2025-10-08 09:46:22]   RMSE: 5.409812
+[2025-10-08 09:46:22]   MAE:  3.669200
+[2025-10-08 09:46:22]   R²:   0.887468
+[2025-10-08 09:46:22] 
+Test Set Performance:
+[2025-10-08 09:46:22]   MSE:  23.984813
+[2025-10-08 09:46:22]   RMSE: 4.897429
+[2025-10-08 09:46:22]   MAE:  3.658198
+[2025-10-08 09:46:22]   R²:   0.923789
+[2025-10-08 09:46:22] 
+Overfitting Check:
+[2025-10-08 09:46:22]   Train-Test MSE Ratio: 1.2202
+[2025-10-08 09:46:22]   Train-Test R² Diff:   -0.0363
+[2025-10-08 09:46:24] 
+============================================================
+[2025-10-08 09:46:24] TOP 5 EQUATIONS (Magpie Regressor):
+[2025-10-08 09:46:24] ============================================================
+[2025-10-08 09:46:24]    size      loss  loss_validation  \
+8    20  0.046508         0.038813   
+7    19  0.047188         0.041856   
+6    15  0.047392         0.041910   
+5    14  0.047392         0.041910   
+4    11  0.047581         0.042201   
+
+                                            equation  
+8  (20.7509 * ((X[17] ** X[4]) * log((log(X[0]) +...  
+7  ((X[0] + (X[17] ** X[4])) * log((590866.6005 *...  
+6      ((X[0] + (X[17] ** X[4])) * log(599520.9124))  
+5               ((X[0] + (X[17] ** X[4])) + 50.8949)  
+4                      (log(X[0]) + (X[17] ** X[4]))  
+[2025-10-08 09:46:24] 
+Best equation: (20.7509 * ((X[17] ** X[4]) * log((log(X[0]) + 2.2819))))
+[2025-10-08 09:46:24] 
+============================================================
+
+[2025-10-08 09:46:24] BEST EQUATION: (20.7509 * ((X[17] ** X[4]) * log((log(X[0]) + 2.2819))))
+[2025-10-08 09:46:44] Saved plots for Magpie Regressor to: c:\Users\Sophie\OneDrive - National University of Ireland, Galway\Y1S2\Thesis\SHAP + RFR or PySR or NN\capstone2025-shiels-TIMES\shap_outputs_07Oct2025\Magpie Regressor\1p5c_OS_SSP2\GSupply\all
+
+
+
+
+[2025-10-08 09:46:44] TRAINING: PySRRegressor...
+
+[2025-10-08 12:39:27] 
+============================================================
+[2025-10-08 12:39:27] MODEL QUALITY METRICS: PySRRegressor
+[2025-10-08 12:39:27] ============================================================
+[2025-10-08 12:39:27] Training Set Performance:
+[2025-10-08 12:39:27]   MSE:  4.990950
+[2025-10-08 12:39:27]   RMSE: 2.234043
+[2025-10-08 12:39:27]   MAE:  1.557966
+[2025-10-08 12:39:27]   R²:   0.980809
+[2025-10-08 12:39:27] 
+Test Set Performance:
+[2025-10-08 12:39:27]   MSE:  7.669982
+[2025-10-08 12:39:27]   RMSE: 2.769473
+[2025-10-08 12:39:27]   MAE:  1.885071
+[2025-10-08 12:39:27]   R²:   0.975629
+[2025-10-08 12:39:27] 
+Overfitting Check:
+[2025-10-08 12:39:27]   Train-Test MSE Ratio: 0.6507
+[2025-10-08 12:39:27]   Train-Test R² Diff:   0.0052
+[2025-10-08 12:39:54] 
+============================================================
+[2025-10-08 12:39:54] TOP 5 EQUATIONS (PySRRegressor):
+[2025-10-08 12:39:54] ============================================================
+[2025-10-08 12:39:54]     complexity      loss     score  \
+24          30  4.568426  0.029112   
+23          29  4.703375  0.003270   
+22          28  4.718781  0.056075   
+21          27  4.990946  0.111474   
+20          26  5.579503  0.003824   
+
+                                             equation  
+24  (((sin(((2.9602358 - Clim_Sens) * -14.853827) ...  
+23  (((sin(sin((2.9569676 - Clim_Sens) / SDR) * -1...  
+22  ((GDP * ((((Clim_Sens - 2.4743633) * 38.67004)...  
+21  ((GDP * ((sin((-14.919092 * (2.9678652 - Clim_...  
+20  ((((sin(sin((2.9574604 - Clim_Sens) / SDR) * -...  
+[2025-10-08 12:39:54] 
+Best equation: (GDP*(sin(-14.919092*(2.9678652 - Clim_Sens)/SDR) + 15.607528 + (Clim_Sens - 1*2.4714403)*38.79553/SDR) + 6.012168/Biomass_Poten)/cos(Elast_ESD_Driver)
+[2025-10-08 12:39:54] 
+============================================================
+
+[2025-10-08 12:39:54] BEST EQUATION: (GDP*(sin(-14.919092*(2.9678652 - Clim_Sens)/SDR) + 15.607528 + (Clim_Sens - 1*2.4714403)*38.79553/SDR) + 6.012168/Biomass_Poten)/cos(Elast_ESD_Driver)
+[2025-10-08 12:40:13] Saved plots for PySRRegressor to: c:\Users\Sophie\OneDrive - National University of Ireland, Galway\Y1S2\Thesis\SHAP + RFR or PySR or NN\capstone2025-shiels-TIMES\shap_outputs_07Oct2025\PySRRegressor\1p5c_OS_SSP2\GSupply\all
+
+
+
+
+[2025-10-08 12:40:13] TRAINING: RandomForestRegressor...
+
+[2025-10-08 12:42:07] 
+============================================================
+[2025-10-08 12:42:07] MODEL QUALITY METRICS: RandomForestRegressor
+[2025-10-08 12:42:07] ============================================================
+[2025-10-08 12:42:07] Training Set Performance:
+[2025-10-08 12:42:07]   MSE:  2.225929
+[2025-10-08 12:42:07]   RMSE: 1.491955
+[2025-10-08 12:42:07]   MAE:  0.923266
+[2025-10-08 12:42:07]   R²:   0.991441
+[2025-10-08 12:42:07] 
+Test Set Performance:
+[2025-10-08 12:42:07]   MSE:  18.571960
+[2025-10-08 12:42:07]   RMSE: 4.309520
+[2025-10-08 12:42:07]   MAE:  2.824277
+[2025-10-08 12:42:07]   R²:   0.940988
+[2025-10-08 12:42:07] 
+Overfitting Check:
+[2025-10-08 12:42:07]   Train-Test MSE Ratio: 0.1199
+[2025-10-08 12:42:07]   Train-Test R² Diff:   0.0505
+[2025-10-08 14:39:23] 
+============================================================
+[2025-10-08 14:39:23] FEATURE IMPORTANCES (RandomForestRegressor):
+[2025-10-08 14:39:23] ============================================================
+[2025-10-08 14:39:23] Top 5 Most Important Features:
+[2025-10-08 14:39:23]   1. Clim_Sens: 0.782293
+[2025-10-08 14:39:23]   2. Elast_ESD_Driver: 0.118865
+[2025-10-08 14:39:23]   3. SDR: 0.046658
+[2025-10-08 14:39:23]   4. GDP: 0.008859
+[2025-10-08 14:39:23]   5. Solar_Poten: 0.004666
+[2025-10-08 14:39:23] 
+Model Parameters:
+[2025-10-08 14:39:23]   Number of trees: 10000
+[2025-10-08 14:39:23]   Max depth: None
+[2025-10-08 14:39:23]   Number of features used: 18
+[2025-10-08 14:39:23] 
+============================================================
+
+[2025-10-08 14:39:23] BEST EQUATION: RandomForestRegressor (no symbolic equation)
+[2025-10-08 14:39:43] Saved plots for RandomForestRegressor to: c:\Users\Sophie\OneDrive - National University of Ireland, Galway\Y1S2\Thesis\SHAP + RFR or PySR or NN\capstone2025-shiels-TIMES\shap_outputs_07Oct2025\RandomForestRegressor\1p5c_OS_SSP2\GSupply\all
+
+
+
+
+[2025-10-08 14:39:43] TRAINING: MLPRegressor...
+
+[2025-10-08 14:39:47] 
+============================================================
+[2025-10-08 14:39:47] MODEL QUALITY METRICS: MLPRegressor
+[2025-10-08 14:39:47] ============================================================
+[2025-10-08 14:39:47] Training Set Performance:
+[2025-10-08 14:39:47]   MSE:  29.199438
+[2025-10-08 14:39:47]   RMSE: 5.403650
+[2025-10-08 14:39:47]   MAE:  3.899135
+[2025-10-08 14:39:47]   R²:   0.887725
+[2025-10-08 14:39:47] 
+Test Set Performance:
+[2025-10-08 14:39:47]   MSE:  33.696357
+[2025-10-08 14:39:47]   RMSE: 5.804856
+[2025-10-08 14:39:47]   MAE:  4.096375
+[2025-10-08 14:39:47]   R²:   0.892931
+[2025-10-08 14:39:47] 
+Overfitting Check:
+[2025-10-08 14:39:47]   Train-Test MSE Ratio: 0.8665
+[2025-10-08 14:39:47]   Train-Test R² Diff:   -0.0052
+[2025-10-08 14:39:59] 
+============================================================
+[2025-10-08 14:39:59] NEURAL NETWORK DETAILS (MLPRegressor):
+[2025-10-08 14:39:59] ============================================================
+[2025-10-08 14:39:59] Network Architecture:
+[2025-10-08 14:39:59]   Hidden layers: (100,)
+[2025-10-08 14:39:59]   Number of iterations: 1300
+[2025-10-08 14:39:59]   Number of layers: 3
+[2025-10-08 14:39:59]   Output activation: identity
+[2025-10-08 14:39:59] 
+Training Details:
+[2025-10-08 14:39:59]   Final loss: 14.475731
+[2025-10-08 14:39:59]   Solver: adam
+[2025-10-08 14:39:59]   Learning rate: constant
+[2025-10-08 14:39:59]   Training curve (last 5 losses): [np.float64(14.514252647247309), np.float64(14.616085632283264), np.float64(14.460228103302999), np.float64(14.511161507589378), np.float64(14.475730531858513)]
+[2025-10-08 14:39:59] 
+============================================================
+
+[2025-10-08 14:39:59] BEST EQUATION: MLPRegressor (no symbolic equation)
+[2025-10-08 14:40:16] Saved plots for MLPRegressor to: c:\Users\Sophie\OneDrive - National University of Ireland, Galway\Y1S2\Thesis\SHAP + RFR or PySR or NN\capstone2025-shiels-TIMES\shap_outputs_07Oct2025\MLPRegressor\1p5c_OS_SSP2\GSupply\all
+
+
+
+
+[2025-10-08 14:40:16] PARAMETERS: Scenario 2C_SSP2, xvar code small xvars ['SDR', 'Clim_Sens', 'Pop', 'GDP'], target GSupply
+
+[2025-10-08 14:40:16] 
+[2025-10-08 14:40:16] TRAINING: Magpie Regressor...
+
+[2025-10-08 14:40:40] 
+============================================================
+[2025-10-08 14:40:40] MODEL QUALITY METRICS: Magpie Regressor
+[2025-10-08 14:40:40] ============================================================
+[2025-10-08 14:40:40] Training Set Performance:
+[2025-10-08 14:40:40]   MSE:  15.846528
+[2025-10-08 14:40:40]   RMSE: 3.980770
+[2025-10-08 14:40:40]   MAE:  3.038286
+[2025-10-08 14:40:40]   R²:   0.769323
+[2025-10-08 14:40:40] 
+Test Set Performance:
+[2025-10-08 14:40:40]   MSE:  22.256747
+[2025-10-08 14:40:40]   RMSE: 4.717706
+[2025-10-08 14:40:40]   MAE:  3.401347
+[2025-10-08 14:40:40]   R²:   0.759955
+[2025-10-08 14:40:40] 
+Overfitting Check:
+[2025-10-08 14:40:40]   Train-Test MSE Ratio: 0.7120
+[2025-10-08 14:40:40]   Train-Test R² Diff:   0.0094
+[2025-10-08 14:40:40] 
+============================================================
+[2025-10-08 14:40:40] TOP 5 EQUATIONS (Magpie Regressor):
+[2025-10-08 14:40:40] ============================================================
+[2025-10-08 14:40:40]    size      loss  loss_validation  \
+8    27  0.123673         0.118763   
+7    18  0.131492         0.119938   
+6    15  0.130899         0.120114   
+5    14  0.130935         0.120124   
+4    11  0.130653         0.120619   
+
+                                            equation  
+8  ((X[3] * (X[1] ** 2.4217)) + (log(X[1]) + (84....  
+7     (X[1] ** (2.8207 - ((X[3] ** 0.3162) - X[3])))  
+6          (2.3268 ** ((X[3] + 2.3268) * log(X[1])))  
+5                 ((X[3] * (X[1] ** 1.8235)) * X[1])  
+4                     (X[1] ** (log(6.0350) + X[3]))  
+[2025-10-08 14:40:40] 
+Best equation: ((X[3] * (X[1] ** 2.4217)) + (log(X[1]) + (84.9675 / (X[1] - -1.0754))))
+[2025-10-08 14:40:40] 
+============================================================
+
+[2025-10-08 14:40:40] BEST EQUATION: ((X[3] * (X[1] ** 2.4217)) + (log(X[1]) + (84.9675 / (X[1] - -1.0754))))
+[2025-10-08 14:40:46] Saved plots for Magpie Regressor to: c:\Users\Sophie\OneDrive - National University of Ireland, Galway\Y1S2\Thesis\SHAP + RFR or PySR or NN\capstone2025-shiels-TIMES\shap_outputs_07Oct2025\Magpie Regressor\2C_SSP2\GSupply\small
+
+
+
+
+[2025-10-08 14:40:46] TRAINING: PySRRegressor...
+
+[2025-10-08 17:57:47] 
+============================================================
+[2025-10-08 17:57:47] MODEL QUALITY METRICS: PySRRegressor
+[2025-10-08 17:57:47] ============================================================
+[2025-10-08 17:57:47] Training Set Performance:
+[2025-10-08 17:57:47]   MSE:  17.388924
+[2025-10-08 17:57:47]   RMSE: 4.170003
+[2025-10-08 17:57:47]   MAE:  3.211828
+[2025-10-08 17:57:47]   R²:   0.746871
+[2025-10-08 17:57:47] 
+Test Set Performance:
+[2025-10-08 17:57:47]   MSE:  25.256850
+[2025-10-08 17:57:47]   RMSE: 5.025619
+[2025-10-08 17:57:47]   MAE:  3.738708
+[2025-10-08 17:57:47]   R²:   0.727598
+[2025-10-08 17:57:47] 
+Overfitting Check:
+[2025-10-08 17:57:47]   Train-Test MSE Ratio: 0.6885
+[2025-10-08 17:57:47]   Train-Test R² Diff:   0.0193
+[2025-10-08 17:57:49] 
+============================================================
+[2025-10-08 17:57:49] TOP 5 EQUATIONS (PySRRegressor):
+[2025-10-08 17:57:49] ============================================================
+[2025-10-08 17:57:49]     complexity       loss     score  \
+23          30  13.652815  0.000885   
+22          29  13.664905  0.015287   
+21          28  13.875410  0.000757   
+20          27  13.885920  0.013562   
+19          26  14.075526  0.002011   
+
+                                             equation  
+23  ((exp((Pop * sin(Clim_Sens / Pop)) * (-2.85763...  
+22  (Pop * (exp(Pop * ((-2.849731 - (sin(SDR * -32...  
+21  ((exp(sin(Clim_Sens / 1.0216594) * ((-2.849966...  
+20  exp((Pop * sin(Clim_Sens)) * (-2.8797944 - (si...  
+19  (GDP * (exp(sin(Clim_Sens) * (Pop * (-2.856361...  
+[2025-10-08 17:57:49] 
+Best equation: exp(Clim_Sens/1.3418217) + 28.392485
+[2025-10-08 17:57:49] 
+============================================================
+
+[2025-10-08 17:57:49] BEST EQUATION: exp(Clim_Sens/1.3418217) + 28.392485
+[2025-10-08 17:57:56] Saved plots for PySRRegressor to: c:\Users\Sophie\OneDrive - National University of Ireland, Galway\Y1S2\Thesis\SHAP + RFR or PySR or NN\capstone2025-shiels-TIMES\shap_outputs_07Oct2025\PySRRegressor\2C_SSP2\GSupply\small
+
+
+
+
+[2025-10-08 17:57:56] TRAINING: RandomForestRegressor...
+
+[2025-10-08 17:58:43] 
+============================================================
+[2025-10-08 17:58:43] MODEL QUALITY METRICS: RandomForestRegressor
+[2025-10-08 17:58:43] ============================================================
+[2025-10-08 17:58:43] Training Set Performance:
+[2025-10-08 17:58:43]   MSE:  2.571033
+[2025-10-08 17:58:43]   RMSE: 1.603444
+[2025-10-08 17:58:43]   MAE:  1.214871
+[2025-10-08 17:58:43]   R²:   0.962574
+[2025-10-08 17:58:43] 
+Test Set Performance:
+[2025-10-08 17:58:43]   MSE:  21.132210
+[2025-10-08 17:58:43]   RMSE: 4.596978
+[2025-10-08 17:58:43]   MAE:  3.355969
+[2025-10-08 17:58:43]   R²:   0.772083
+[2025-10-08 17:58:43] 
+Overfitting Check:
+[2025-10-08 17:58:43]   Train-Test MSE Ratio: 0.1217
+[2025-10-08 17:58:43]   Train-Test R² Diff:   0.1905
+[2025-10-08 18:08:19] 
+============================================================
+[2025-10-08 18:08:19] FEATURE IMPORTANCES (RandomForestRegressor):
+[2025-10-08 18:08:19] ============================================================
+[2025-10-08 18:08:20] Top 5 Most Important Features:
+[2025-10-08 18:08:20]   1. Clim_Sens: 0.788291
+[2025-10-08 18:08:20]   2. GDP: 0.086414
+[2025-10-08 18:08:20]   3. SDR: 0.064132
+[2025-10-08 18:08:20]   4. Pop: 0.061162
+[2025-10-08 18:08:20] 
+Model Parameters:
+[2025-10-08 18:08:20]   Number of trees: 10000
+[2025-10-08 18:08:20]   Max depth: None
+[2025-10-08 18:08:20]   Number of features used: 4
+[2025-10-08 18:08:20] 
+============================================================
+
+[2025-10-08 18:08:20] BEST EQUATION: RandomForestRegressor (no symbolic equation)
+[2025-10-08 18:08:25] Saved plots for RandomForestRegressor to: c:\Users\Sophie\OneDrive - National University of Ireland, Galway\Y1S2\Thesis\SHAP + RFR or PySR or NN\capstone2025-shiels-TIMES\shap_outputs_07Oct2025\RandomForestRegressor\2C_SSP2\GSupply\small
+
+
+
+
+[2025-10-08 18:08:25] TRAINING: MLPRegressor...
+
+[2025-10-08 18:08:27] 
+============================================================
+[2025-10-08 18:08:27] MODEL QUALITY METRICS: MLPRegressor
+[2025-10-08 18:08:27] ============================================================
+[2025-10-08 18:08:27] Training Set Performance:
+[2025-10-08 18:08:27]   MSE:  18.667084
+[2025-10-08 18:08:27]   RMSE: 4.320542
+[2025-10-08 18:08:27]   MAE:  3.310561
+[2025-10-08 18:08:27]   R²:   0.728265
+[2025-10-08 18:08:27] 
+Test Set Performance:
+[2025-10-08 18:08:27]   MSE:  26.553812
+[2025-10-08 18:08:27]   RMSE: 5.153039
+[2025-10-08 18:08:27]   MAE:  3.731943
+[2025-10-08 18:08:27]   R²:   0.713609
+[2025-10-08 18:08:27] 
+Overfitting Check:
+[2025-10-08 18:08:27]   Train-Test MSE Ratio: 0.7030
+[2025-10-08 18:08:27]   Train-Test R² Diff:   0.0147
+[2025-10-08 18:08:28] 
+============================================================
+[2025-10-08 18:08:28] NEURAL NETWORK DETAILS (MLPRegressor):
+[2025-10-08 18:08:28] ============================================================
+[2025-10-08 18:08:28] Network Architecture:
+[2025-10-08 18:08:28]   Hidden layers: (100,)
+[2025-10-08 18:08:28]   Number of iterations: 868
+[2025-10-08 18:08:28]   Number of layers: 3
+[2025-10-08 18:08:28]   Output activation: identity
+[2025-10-08 18:08:28] 
+Training Details:
+[2025-10-08 18:08:28]   Final loss: 9.336753
+[2025-10-08 18:08:28]   Solver: adam
+[2025-10-08 18:08:28]   Learning rate: constant
+[2025-10-08 18:08:28]   Training curve (last 5 losses): [np.float64(9.398140189878378), np.float64(9.363607759277812), np.float64(9.337523667574368), np.float64(9.33434000634505), np.float64(9.336752724043869)]
+[2025-10-08 18:08:28] 
+============================================================
+
+[2025-10-08 18:08:28] BEST EQUATION: MLPRegressor (no symbolic equation)
+[2025-10-08 18:08:34] Saved plots for MLPRegressor to: c:\Users\Sophie\OneDrive - National University of Ireland, Galway\Y1S2\Thesis\SHAP + RFR or PySR or NN\capstone2025-shiels-TIMES\shap_outputs_07Oct2025\MLPRegressor\2C_SSP2\GSupply\small
+
+
+
+
+[2025-10-08 18:08:34] PARAMETERS: Scenario 2C_SSP2, xvar code all xvars ['GDP', 'Pop', 'Other_ESD_Drivers', 'SDR', 'Elast_ESD_Driver', 'Elast_ESD_Price', 'CO2_Storage_Poten', 'Wind_Poten', 'Solar_Poten', 'Biomass_Poten', 'Oil_Gas_Poten', 'Solar_PV_Inv_Cost', 'Wind_Inv_Cost', 'Bioenergy_CCS_Inv_Cost', 'Other_Tech_Cost', 'Forcing', 'Land_Sinks', 'Clim_Sens'], target GSupply
+
+[2025-10-08 18:08:34] 
+[2025-10-08 18:08:34] TRAINING: Magpie Regressor...
+
+[2025-10-08 18:08:57] 
+============================================================
+[2025-10-08 18:08:57] MODEL QUALITY METRICS: Magpie Regressor
+[2025-10-08 18:08:57] ============================================================
+[2025-10-08 18:08:57] Training Set Performance:
+[2025-10-08 18:08:57]   MSE:  3.416660
+[2025-10-08 18:08:57]   RMSE: 1.848421
+[2025-10-08 18:08:57]   MAE:  1.367160
+[2025-10-08 18:08:57]   R²:   0.950264
+[2025-10-08 18:08:57] 
+Test Set Performance:
+[2025-10-08 18:08:57]   MSE:  5.712198
+[2025-10-08 18:08:57]   RMSE: 2.390021
+[2025-10-08 18:08:57]   MAE:  1.645864
+[2025-10-08 18:08:57]   R²:   0.938392
+[2025-10-08 18:08:57] 
+Overfitting Check:
+[2025-10-08 18:08:57]   Train-Test MSE Ratio: 0.5981
+[2025-10-08 18:08:57]   Train-Test R² Diff:   0.0119
+[2025-10-08 18:09:00] 
+============================================================
+[2025-10-08 18:09:00] TOP 5 EQUATIONS (Magpie Regressor):
+[2025-10-08 18:09:00] ============================================================
+[2025-10-08 18:09:00]    size      loss  loss_validation  \
+4    26  0.024416         0.024007   
+3    20  0.041203         0.034257   
+2    10  0.057780         0.049605   
+1     6  0.093384         0.068485   
+0     2  0.189802         0.127852   
+
+                                            equation  
+4  (((X[4] + (310.6917 + (X[17] ** (X[0] + 2.6178...  
+3  (X[17] ** log((X[0] * (log((6642509.3315 + X[1...  
+2                          ((X[17] * X[17]) ** X[4])  
+1                                     (X[4] * X[17])  
+0                                              X[17]  
+[2025-10-08 18:09:00] 
+Best equation: (((X[4] + (310.6917 + (X[17] ** (X[0] + 2.6178)))) / 9.8184) * X[4])
+[2025-10-08 18:09:00] 
+============================================================
+
+[2025-10-08 18:09:00] BEST EQUATION: (((X[4] + (310.6917 + (X[17] ** (X[0] + 2.6178)))) / 9.8184) * X[4])
+[2025-10-08 18:09:19] Saved plots for Magpie Regressor to: c:\Users\Sophie\OneDrive - National University of Ireland, Galway\Y1S2\Thesis\SHAP + RFR or PySR or NN\capstone2025-shiels-TIMES\shap_outputs_07Oct2025\Magpie Regressor\2C_SSP2\GSupply\all
+
+
+
+
+[2025-10-08 18:09:19] TRAINING: PySRRegressor...
+
+[2025-10-08 20:36:05] 
+============================================================
+[2025-10-08 20:36:05] MODEL QUALITY METRICS: PySRRegressor
+[2025-10-08 20:36:05] ============================================================
+[2025-10-08 20:36:05] Training Set Performance:
+[2025-10-08 20:36:05]   MSE:  0.804121
+[2025-10-08 20:36:05]   RMSE: 0.896728
+[2025-10-08 20:36:05]   MAE:  0.610253
+[2025-10-08 20:36:05]   R²:   0.988294
+[2025-10-08 20:36:05] 
+Test Set Performance:
+[2025-10-08 20:36:05]   MSE:  1.153112
+[2025-10-08 20:36:05]   RMSE: 1.073831
+[2025-10-08 20:36:05]   MAE:  0.669775
+[2025-10-08 20:36:05]   R²:   0.987563
+[2025-10-08 20:36:05] 
+Overfitting Check:
+[2025-10-08 20:36:05]   Train-Test MSE Ratio: 0.6973
+[2025-10-08 20:36:05]   Train-Test R² Diff:   0.0007
+[2025-10-08 20:36:32] 
+============================================================
+[2025-10-08 20:36:32] TOP 5 EQUATIONS (PySRRegressor):
+[2025-10-08 20:36:32] ============================================================
+[2025-10-08 20:36:32]     complexity      loss     score  \
+25          30  0.728044  0.001254   
+24          29  0.728958  0.017401   
+23          28  0.741754  0.064779   
+22          27  0.791395  0.015953   
+21          26  0.804121  0.108740   
+
+                                             equation  
+25  sin((Clim_Sens * Clim_Sens) / -1.7389252) + ((...  
+24  (Elast_ESD_Driver * (((((Clim_Sens + ((GDP * (...  
+23  sin(Clim_Sens * (Clim_Sens / -1.7416613)) + ((...  
+22  ((Clim_Sens * (((Clim_Sens + (((Elast_ESD_Driv...  
+21  Elast_ESD_Driver * ((Clim_Sens * ((((Clim_Sens...  
+[2025-10-08 20:36:32] 
+Best equation: Elast_ESD_Driver*(Clim_Sens*(-Biomass_Poten + (Clim_Sens + GDP*(Elast_ESD_Driver - (-0.46287477)*Other_ESD_Drivers) - 5.844191)*4.772643) + sin(Clim_Sens/(-0.25634548)) + 58.4465)
+[2025-10-08 20:36:32] 
+============================================================
+
+[2025-10-08 20:36:32] BEST EQUATION: Elast_ESD_Driver*(Clim_Sens*(-Biomass_Poten + (Clim_Sens + GDP*(Elast_ESD_Driver - (-0.46287477)*Other_ESD_Drivers) - 5.844191)*4.772643) + sin(Clim_Sens/(-0.25634548)) + 58.4465)
+[2025-10-08 20:36:51] Saved plots for PySRRegressor to: c:\Users\Sophie\OneDrive - National University of Ireland, Galway\Y1S2\Thesis\SHAP + RFR or PySR or NN\capstone2025-shiels-TIMES\shap_outputs_07Oct2025\PySRRegressor\2C_SSP2\GSupply\all
+
+
+
+
+[2025-10-08 20:36:51] TRAINING: RandomForestRegressor...
+
+[2025-10-08 20:38:44] 
+============================================================
+[2025-10-08 20:38:44] MODEL QUALITY METRICS: RandomForestRegressor
+[2025-10-08 20:38:44] ============================================================
+[2025-10-08 20:38:44] Training Set Performance:
+[2025-10-08 20:38:44]   MSE:  0.554214
+[2025-10-08 20:38:44]   RMSE: 0.744455
+[2025-10-08 20:38:44]   MAE:  0.435142
+[2025-10-08 20:38:44]   R²:   0.991932
+[2025-10-08 20:38:44] 
+Test Set Performance:
+[2025-10-08 20:38:44]   MSE:  4.515635
+[2025-10-08 20:38:44]   RMSE: 2.125002
+[2025-10-08 20:38:44]   MAE:  1.286095
+[2025-10-08 20:38:44]   R²:   0.951298
+[2025-10-08 20:38:44] 
+Overfitting Check:
+[2025-10-08 20:38:44]   Train-Test MSE Ratio: 0.1227
+[2025-10-08 20:38:44]   Train-Test R² Diff:   0.0406
+[2025-10-08 22:36:34] 
+============================================================
+[2025-10-08 22:36:34] FEATURE IMPORTANCES (RandomForestRegressor):
+[2025-10-08 22:36:34] ============================================================
+[2025-10-08 22:36:35] Top 5 Most Important Features:
+[2025-10-08 22:36:35]   1. Clim_Sens: 0.743681
+[2025-10-08 22:36:35]   2. Elast_ESD_Driver: 0.197681
+[2025-10-08 22:36:35]   3. GDP: 0.015087
+[2025-10-08 22:36:35]   4. Other_ESD_Drivers: 0.004982
+[2025-10-08 22:36:35]   5. Solar_Poten: 0.004220
+[2025-10-08 22:36:35] 
+Model Parameters:
+[2025-10-08 22:36:35]   Number of trees: 10000
+[2025-10-08 22:36:35]   Max depth: None
+[2025-10-08 22:36:35]   Number of features used: 18
+[2025-10-08 22:36:35] 
+============================================================
+
+[2025-10-08 22:36:35] BEST EQUATION: RandomForestRegressor (no symbolic equation)
+[2025-10-08 22:36:54] Saved plots for RandomForestRegressor to: c:\Users\Sophie\OneDrive - National University of Ireland, Galway\Y1S2\Thesis\SHAP + RFR or PySR or NN\capstone2025-shiels-TIMES\shap_outputs_07Oct2025\RandomForestRegressor\2C_SSP2\GSupply\all
+
+
+
+
+[2025-10-08 22:36:54] TRAINING: MLPRegressor...
+

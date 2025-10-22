@@ -1,0 +1,8 @@
+[2025-10-09 18:20:24]
+ PARAMETERS: Scenario BASE_SSP2, xvar code small xvars ['SDR', 'Clim_Sens', 'Pop', 'GDP'], target GSupply
+
+[2025-10-09 18:20:24]
+ 
+[2025-10-09 18:20:24]
+ TRAINING: Magpie Regressor...
+
